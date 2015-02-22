@@ -1,0 +1,47 @@
+@background: #666666;
+@foreground: #E0E0E0;
+@sectionColor: #FFFFFF;
+@contentPadding: 0.75em;
+
+body {
+    background-color: @background;
+    margin: @contentPadding;
+}
+
+.mainContainer {
+    background-color: @foreground;
+    padding-bottom: @contentPadding;
+    text-align: center;
+    border-radius: @contentPadding;
+}
+
+.section {
+    background-color: @sectionColor;
+    margin-top: @contentPadding;
+    text-align: left;
+    padding: @contentPadding;
+}
+
+.date-input {
+    cursor: pointer;
+}
+
+.timeholder {
+    float: left;
+    width: 50%;
+    text-align: center;
+    table {
+        width: 26%;
+        margin-left: 37%;
+    }
+}
+
+.clear {
+    clear: both;
+}
+
+.event {
+    width: 25%;
+    background-color: @foreground;
+    margin-top: 0.2em;
+}

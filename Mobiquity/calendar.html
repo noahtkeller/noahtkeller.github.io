@@ -1,0 +1,23 @@
+<div class="section">
+    <span class="section-title">
+        Select A Date
+    </span>
+    <input popover-placement="top" popover-trigger="mouseenter" popover="Click to select a date!" ng-click="open($event)" class="form-control date-input" datepicker-popup="{{format}}" ng-model="date" is-open="opened" ng-required="true" close-text="Close" />
+</div>
+<div class="section">
+    <span class="section-title">
+        Calendar
+        <select ng-model="activeCalendar" ng-options="k as v.id for (k, v) in calendars"></select>
+        <button class="btn-small btn-{{isAddCollapsed ? 'success' : 'warning'}}" ng-click="isAddCollapsed = !isAddCollapsed">
+            <i class="glyphicon glyphicon-{{isAddCollapsed ? 'plus' : 'minus'}}-sign"></i>
+            Add Event
+        </button>
+        <div add="" collapse="isAddCollapsed" class="well well-lg addevent"></div>
+    </span>
+    <div ng-repeat="event in calendars[activeCalendar].events" class="event">
+        {{event.summary}} {{event.description}}<br/>
+        Created by: {{event.creator.displayName}}<br/>
+        Starts at: {{event.start}}<br/>
+        Ends at: {{event.end}}
+    </div>
+</div>

@@ -1,0 +1,25 @@
+New Event
+<div class="input-group input-group-sm">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-font"></i></span>
+    <input ng-model="summary" type="text" class="form-control" placeholder="Summary">
+</div>
+<div class="input-group input-group-sm">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-font"></i></span>
+    <input ng-model="description" type="text" class="form-control" placeholder="Description">
+</div>
+<div class="input-group input-group-sm">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-font"></i></span>
+    <input ng-model="location" type="text" class="form-control" placeholder="Location">
+</div>
+<div class="timeholder">
+    <span>Start Time</span>
+    <timepicker ng-model="startTime" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="isMeridian"></timepicker>
+</div>
+<div class="timeholder">
+    <span>End Time</span>
+    <timepicker ng-model="endTime" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="isMeridian"></timepicker>
+</div>
+<div class="clear"></div>
+<button class="btn btn-large btn-success" ng-click="createEvent();">
+    Save
+</button>

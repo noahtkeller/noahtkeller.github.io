@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html data-ng-app="MobiquityChallenge">
+
+    <head>
+        <title>Mobiquity Challenge</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Requires /Mobiquity/ as base href for NetBeans IDE to debug in chrome
+             however will just be a / when running standalone -->
+        <!-- Add/remove the last > from this line to change --
+        <base href="/">
+        <!-- Add/remove the last > from this line to change -->
+        <base href="/Mobiquity/">
+        <!-- -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet/less" href='lib/styles/style.less'>
+        <!-- I realize client side compilation is a resource hog, but I figured
+             it would suffice for this demonstration -->
+        <script src="lib/includes/gapi.js"></script>
+        <script src="lib/includes/less.min.js" type="text/javascript"></script>
+    </head>
+
+    <body data-ng-controller="MainCtrl">
+
+        <div class="mainContainer container-fluid">
+            <h3 class="title">Mobiquity Web Challenge</h3>   
+            <div data-ng-controller="NavCtrl">
+                <div class="btn-group">
+                    <label class="btn btn-primary" ng-model="pageName" btn-radio="'readme'">
+                        <i class="glyphicon glyphicon-info-sign"></i>
+                        Read Me
+                    </label>
+                    <label class="btn btn-primary" ng-model="pageName" btn-radio="'calendar'">
+                        <i class="glyphicon glyphicon-calendar"></i>
+                        Calendar
+                    </label>
+                    <label class="btn btn-primary" ng-model="pageName" btn-radio="'instructions'">
+                        <i class="glyphicon glyphicon-list"></i>
+                        Instructions
+                    </label>
+                    <login-button></login-button>
+                </div>
+            </div>
+            <div class="contentContainer" data-ui-view=''></div>
+        </div>
+
+        <!-- Import Libs -->
+        <script src="lib/includes/markdown.js"></script>
+        <script src="lib/includes/jstz.js"></script>
+        <script src="lib/includes/angular.js"></script>
+        <script src="lib/includes/ui-bootstrap-tpls.js"></script>
+        <script src="lib/includes/angular-ui-router.js"></script>
+        <script src="lib/includes/angular-googleapi.js"></script>
+
+
+        <!-- Import App -->
+        <script src="lib/MobiquityChallenge.js"></script>
+        <script src="lib/MainController.js"></script>
+        <script src="lib/NavController.js"></script>
+        <script src="lib/CalendarPageController.js"></script>
+        <script src="lib/CalendarFactory.js"></script>
+        <script src="lib/LoginButtonDirective.js"></script>
+        <script src="lib/MarkdownDirective.js"></script>
+        <script src="lib/AddDirective.js"></script>
+    </body>
+
+</html>
