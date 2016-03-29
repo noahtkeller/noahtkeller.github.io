@@ -3,29 +3,18 @@
     <head>
         <title>Noah Keller</title>
         <base href='/'/>
-        <link rel='stylesheet' href='css/assets.css'/>
+        <link rel='stylesheet' href='css/foundation-icons.css'/>
         <link rel='stylesheet' href='css/style.css'/>
     </head>
 
     <body data-ng-controller="bodyController">
-        <ul id="navigation" data-ng-repeat="state in states">
-            <li>
-                <a data-ui-sref="{{state.name}}">
-                    <span ng-if="state.icon !== undefined">
-                        <i class="{{state.icon}}"></i>
-                    </span>
-                    {{state.title}}
-                </a>
-            </li>
-        </ul>
-        <div data-ui-view></div>
-        <script type="text/javascript" src="js/assets.js"></script>
-        <script src="https://cdn.firebase.com/js/client/2.1.1/firebase.js"></script>
-        <script src="https://cdn.firebase.com/libs/angularfire/0.9.2/angularfire.min.js"></script>
+        <div ui-view=""></div>
+        <script type="text/javascript" src="js/assets/jquery.min.js"></script>
+        <script type="text/javascript" src="js/assets/angular.min.js"></script>
+        <script type="text/javascript" src="js/assets/markdown.min.js"></script>
         <script type="text/javascript" src="js/ngio.js"></script>
-        <script type="text/javascript" src="js/BlogFactory.js"></script>
-        <script type="text/javascript" src="js/BlogDirective.js"></script>
-        <script type="text/javascript" src="js/errorController.js"></script>
+        <script type="text/javascript" src="js/controllers/bodyCtrl.js"></script>
+        <script type="text/javascript" src="js/directives/markdown.js"></script>
     </body>
 
 </html>
