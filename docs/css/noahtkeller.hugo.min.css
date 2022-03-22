@@ -1,0 +1,145 @@
+:root {
+  --mdc-theme-primary: #1976d2;
+  --mdc-theme-secondary: #8bc34a;
+  --mdc-theme-background: #ffffff;
+}
+
+body {
+  font-family: "Fira Mono", monospace;
+}
+body .link-on-primary {
+  background-color: #1976d2;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+body .nav-link {
+  text-transform: uppercase;
+  user-select: none;
+}
+body .nav-link .inactive-link {
+  cursor: default;
+  pointer-events: none;
+}
+body .link-primary {
+  font-weight: normal;
+  color: #1976d2;
+  text-decoration: none;
+}
+body .link-primary > a {
+  font-weight: normal;
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.navigation .container {
+  margin: 0 1rem 0 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navigation .container .nav-link {
+  font-size: 1.5rem;
+}
+.navigation .container .nav-link.home-link {
+  display: block;
+  padding: 0.5rem 0 0.5rem 0;
+}
+.navigation .container .navigation-list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+.navigation .container .navigation-list li {
+  display: inline-block;
+  height: 100%;
+}
+.navigation .container .navigation-list li .inactive-link {
+  display: block;
+  padding: 0.5rem 0 0.5rem 0;
+}
+.navigation .container .navigation-list li a {
+  height: 100%;
+  padding: 0.5rem 0 0.5rem 0;
+  display: block;
+}
+
+.home.container.centered {
+  text-align: center;
+}
+.home.container.centered .avatar {
+  border-radius: 50%;
+}
+
+.repos-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 2em;
+}
+.repos-list .mdc-card {
+  min-width: 350px;
+  inline-size: 30vw;
+  min-height: 15vw;
+  /* @alternate */
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.repos-list .mdc-card .description {
+  padding: 1rem;
+  font-family: "Ubuntu Mono";
+  font-size: 1rem;
+}
+.repos-list .mdc-card .repo-title {
+  display: flex;
+  flex-direction: row;
+  font-family: "Fira Mono";
+}
+.repos-list .mdc-card .repo-title .repo-name {
+  flex: 1;
+  margin: 0.6rem 1rem 0.6rem 1rem;
+  display: inline-block;
+}
+.repos-list .mdc-card .repo-title .material-icons {
+  padding: 0.5rem;
+  vertical-align: top;
+}
+
+.wiki-base .title {
+  margin-top: 0;
+}
+.wiki-base .title .material-icons {
+  vertical-align: bottom;
+}
+.wiki-base .wiki-content {
+  display: flex;
+  flex-direction: row;
+}
+.wiki-base .wiki-content .content {
+  flex: 1;
+}
+.wiki-base .wiki-content .sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 0;
+  min-height: 100vh;
+}
+body header {
+  /* @alternate */
+  box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+  z-index: 1005;
+}
+body > main {
+  flex: 1;
+  display: flex;
+}
+
+#dash-app {
+  width: 100%;
+}

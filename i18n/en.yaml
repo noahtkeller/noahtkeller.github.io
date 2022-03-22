@@ -1,0 +1,8 @@
+- id: blog_link_title
+  translation: Blog
+- id: about_link_title
+  translation: About
+- id: repos_link_title
+  translation: Repos
+- id: repos_info
+  translation: The more details view is powered by the GitHub Wiki for the respective repo.The more details view is powered by the GitHub Wiki for the respective repo.

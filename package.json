@@ -1,0 +1,33 @@
+{
+  "name": "noahtkeller.github.io",
+  "version": "0.1.0",
+  "description": "The source for my personal website. Powered by Hugo, hosted on Github Pages and AWS.",
+  "scripts": {
+    "serve": "hugo serve --themesDir ../ --theme hugo-noahtkeller-theme --disableFastRender --ignoreCache",
+    "build:data": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noahtkeller/noahtkeller.github.io.git"
+  },
+  "homepage": "https://github.com/noahtkeller/noahtkeller.github.io",
+  "bugs": "https://github.com/noahtkeller/noahtkeller.github.io/issues",
+  "author": {
+    "name": "Noah Keller",
+    "email": "noahtkeller@gmail.com",
+    "url": "https://noahtkeller.dev/"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@material/animation": "^13.0.0",
+    "@material/elevation": "^13.0.0",
+    "@material/theme": "^13.0.0",
+    "@noahtkeller/md-theme": "github:noahtkeller/sass-md-theme",
+    "@octokit/core": "^3.6.0",
+    "gulp": "^4.0.2",
+    "hugo-extended": "^0.95.0",
+    "mkdirp": "^1.0.4",
+    "rimraf": "^3.0.2",
+    "sass": "^1.49.9"
+  }
+}

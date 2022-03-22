@@ -1,0 +1,51 @@
+[submodule "themes/coder-portfolio"]
+	path = themes/coder-portfolio
+	url = git@github.com:naro143/hugo-coder-portfolio
+[submodule "content/repos/go-bacnet"]
+	path = content/repos/go-bacnet
+	url = git@github.com:noahtkeller/go-bacnet.wiki
+[submodule "content/repos/vue-dashboard"]
+	path = content/repos/vue-dashboard
+	url = git@github.com:noahtkeller/vue-dashboard.wiki
+[submodule "content/repos/strings-source"]
+	path = content/repos/strings-source
+	url = git@github.com:noahtkeller/strings-source.wiki
+[submodule "content/repos/sam-scrapers"]
+	path = content/repos/sam-scrapers
+	url = git@github.com:noahtkeller/sam-scrapers.wiki
+[submodule "content/repos/node-scrapers"]
+	path = content/repos/node-scrapers
+	url = git@github.com:noahtkeller/node-scrapers.wiki
+[submodule "content/repos/node-kat-cli"]
+	path = content/repos/node-kat-cli
+	url = git@github.com:noahtkeller/node-kat-cli.wiki
+[submodule "content/repos/node-express-services"]
+	path = content/repos/node-express-services
+	url = git@github.com:noahtkeller/node-express-services.wiki
+[submodule "content/repos/node-common-strings"]
+	path = content/repos/node-common-strings
+	url = git@github.com:noahtkeller/node-common-strings.wiki
+[submodule "content/repos/node-common-backend"]
+	path = content/repos/node-common-backend
+	url = git@github.com:noahtkeller/node-common-backend.wiki
+[submodule "content/repos/noahtkeller.github.io"]
+	path = content/repos/noahtkeller.github.io
+	url = git@github.com:noahtkeller/noahtkeller.github.io.wiki
+[submodule "content/repos/home-terraform"]
+	path = content/repos/home-terraform
+	url = git@github.com:noahtkeller/home-terraform.wiki
+[submodule "content/repos/home-packer"]
+	path = content/repos/home-packer
+	url = git@github.com:noahtkeller/home-packer.wiki
+[submodule "content/repos/home-ansible"]
+	path = content/repos/home-ansible
+	url = git@github.com:noahtkeller/home-ansible.wiki
+[submodule "content/repos/home-mono"]
+	path = content/repos/home-mono
+	url = git@github.com:noahtkeller/home-mono.wiki
+[submodule "content/repos/node-us-census-api"]
+	path = content/repos/node-us-census-api
+	url = git@github.com:noahtkeller/node-us-census-api.wiki
+[submodule "content/repos/node-express-tgz"]
+	path = content/repos/node-express-tgz
+	url = git@github.com:noahtkeller/node-express-tgz.wiki

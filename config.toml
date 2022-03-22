@@ -1,0 +1,74 @@
+baseurl = "https://noahtkeller.dev/" # Hostname (and path) to the root.
+title = "Noah Keller" # Site title.
+languagecode = "en" # The site’s language code used to generate RSS.
+defaultcontentlanguage = "en" # The default content language.
+publishDir = "docs"
+enableGitInfo = true
+enableRobotsTXT = true
+
+paginate = 20 # Default number of pages per page in pagination.
+
+pygmentsstyle = "b2" # Color-theme or style for syntax highlighting.
+pygmentscodefences = true # Enable code fence background highlighting.
+pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
+pygmentsUseClasses = true # new add
+
+disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
+
+[params] # theme parameters
+author = "Noah Keller" # Author's name.
+info = "Full-Stack Engineer" # Author's job title or info.
+description = "Noah Keller's personal website" # Site description.
+keywords = "blog,developer,personal" # Site keywords.
+avatarurl = "images/avatar.jpg" # Contain the path of the optionnal avatar in the static folder.
+
+footercontent = "Built with ☕ for 💰️" # Add footer content
+fixedbarContent = "Do you want to know me better?→" # Add fixedbar content
+fixedbarContentAfter = "Login" # Add fixedbar content after click
+
+# Whether you want to hide copyright and credits in the footer.
+hideCredits = false
+hideCopyright = true
+
+staticDir = ["static", "static-dash"]
+
+# Custom CSS
+custom_css = []
+
+# Alignment of Mobile Menu items
+itemscentered = true
+
+thumbnail = "images/tn.png" # default sns thumbnail
+
+# Multilanguage mode
+langseparator = "|" # Separates menus from language selectors when site is multilingual.
+
+# Social links
+[[params.social]]
+name = "Github"
+icon = "fab fa-github"
+weight = 1
+url = "https://github.com/noahtkeller"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "fab fa-linkedin"
+weight = 3
+url = "https://www.linkedin.com/in/noah-keller-424b67a2"
+
+[markup.goldmark.renderer]
+unsafe= true
+
+# Menu links
+[[menu.main]]
+name = "repos_link_title"
+weight = 1
+url = "repos"
+[[menu.main]]
+name = "blog_link_title"
+weight = 2
+url  = "post"
+[[menu.main]]
+name = "about_link_title"
+weight = 3
+url = "about"
